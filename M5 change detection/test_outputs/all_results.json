@@ -1,0 +1,758 @@
+[
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_000\\before.png",
+      "image_after": "./cdvqa_samples\\pair_000\\after.png",
+      "query": "What changed between these two dates, and where did the change occur?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\02dc8d88_change_map.png",
+      "overlay_path": "test_outputs\\02dc8d88_overlay.png",
+      "before_after_overlay_path": "test_outputs\\02dc8d88_before_after_overlay.png",
+      "change_percentage": 27.7,
+      "num_change_regions": 84,
+      "dominant_quadrant": "north-west",
+      "dominant_change_category": "vegetation_increased",
+      "change_description": "A substantial change (27.7% of the image area) was detected between the two dates concentrated in the north-west part of the scene. The dominant change pattern corresponds to vegetation increased, spread across 84 distinct region(s).",
+      "vqa_answer": "Primarily in the north-west region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "02dc8d88",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.263
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_001\\before.png",
+      "image_after": "./cdvqa_samples\\pair_001\\after.png",
+      "query": "Has the built-up area increased, decreased, or remained unchanged?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\7af94511_change_map.png",
+      "overlay_path": "test_outputs\\7af94511_overlay.png",
+      "before_after_overlay_path": "test_outputs\\7af94511_before_after_overlay.png",
+      "change_percentage": 34.76,
+      "num_change_regions": 71,
+      "dominant_quadrant": "north-west",
+      "dominant_change_category": "vegetation_decreased",
+      "change_description": "A substantial change (34.76% of the image area) was detected between the two dates concentrated in the north-west part of the scene. The dominant change pattern corresponds to vegetation decreased, spread across 71 distinct region(s).",
+      "vqa_answer": "Decreased.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "7af94511",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.21
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_002\\before.png",
+      "image_after": "./cdvqa_samples\\pair_002\\after.png",
+      "query": "Is there any change between the two images?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\1c639631_change_map.png",
+      "overlay_path": "test_outputs\\1c639631_overlay.png",
+      "before_after_overlay_path": "test_outputs\\1c639631_before_after_overlay.png",
+      "change_percentage": 23.88,
+      "num_change_regions": 47,
+      "dominant_quadrant": "south-east",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A substantial change (23.88% of the image area) was detected between the two dates concentrated in the south-east part of the scene. The dominant change pattern corresponds to built up decreased, spread across 47 distinct region(s).",
+      "vqa_answer": "Yes.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "1c639631",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.216
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_003\\before.png",
+      "image_after": "./cdvqa_samples\\pair_003\\after.png",
+      "query": "Where did the vegetation loss happen?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\dbb9b0c9_change_map.png",
+      "overlay_path": "test_outputs\\dbb9b0c9_overlay.png",
+      "before_after_overlay_path": "test_outputs\\dbb9b0c9_before_after_overlay.png",
+      "change_percentage": 27.92,
+      "num_change_regions": 82,
+      "dominant_quadrant": "north-west",
+      "dominant_change_category": "built_up_increased",
+      "change_description": "A substantial change (27.92% of the image area) was detected between the two dates concentrated in the north-west part of the scene. The dominant change pattern corresponds to built up increased, spread across 82 distinct region(s).",
+      "vqa_answer": "Primarily in the north-west region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "dbb9b0c9",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.223
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_004\\before.png",
+      "image_after": "./cdvqa_samples\\pair_004\\after.png",
+      "query": "What changed between these two dates, and where did the change occur?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\f5529387_change_map.png",
+      "overlay_path": "test_outputs\\f5529387_overlay.png",
+      "before_after_overlay_path": "test_outputs\\f5529387_before_after_overlay.png",
+      "change_percentage": 35.03,
+      "num_change_regions": 59,
+      "dominant_quadrant": "north-east",
+      "dominant_change_category": "vegetation_decreased",
+      "change_description": "A substantial change (35.03% of the image area) was detected between the two dates concentrated in the north-east part of the scene. The dominant change pattern corresponds to vegetation decreased, spread across 59 distinct region(s).",
+      "vqa_answer": "Primarily in the north-east region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "f5529387",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.224
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_005\\before.png",
+      "image_after": "./cdvqa_samples\\pair_005\\after.png",
+      "query": "Has the built-up area increased, decreased, or remained unchanged?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\70610109_change_map.png",
+      "overlay_path": "test_outputs\\70610109_overlay.png",
+      "before_after_overlay_path": "test_outputs\\70610109_before_after_overlay.png",
+      "change_percentage": 10.67,
+      "num_change_regions": 29,
+      "dominant_quadrant": "north-west",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A moderate change (10.67% of the image area) was detected between the two dates concentrated in the north-west part of the scene. The dominant change pattern corresponds to built up decreased, spread across 29 distinct region(s).",
+      "vqa_answer": "Decreased.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "70610109",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.186
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_006\\before.png",
+      "image_after": "./cdvqa_samples\\pair_006\\after.png",
+      "query": "Is there any change between the two images?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\58d3256f_change_map.png",
+      "overlay_path": "test_outputs\\58d3256f_overlay.png",
+      "before_after_overlay_path": "test_outputs\\58d3256f_before_after_overlay.png",
+      "change_percentage": 37.49,
+      "num_change_regions": 65,
+      "dominant_quadrant": "south-east",
+      "dominant_change_category": "vegetation_increased",
+      "change_description": "A substantial change (37.49% of the image area) was detected between the two dates concentrated in the south-east part of the scene. The dominant change pattern corresponds to vegetation increased, spread across 65 distinct region(s).",
+      "vqa_answer": "Yes.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "58d3256f",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.242
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_007\\before.png",
+      "image_after": "./cdvqa_samples\\pair_007\\after.png",
+      "query": "Where did the vegetation loss happen?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\17912a00_change_map.png",
+      "overlay_path": "test_outputs\\17912a00_overlay.png",
+      "before_after_overlay_path": "test_outputs\\17912a00_before_after_overlay.png",
+      "change_percentage": 28.41,
+      "num_change_regions": 65,
+      "dominant_quadrant": "north-east",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A substantial change (28.41% of the image area) was detected between the two dates concentrated in the north-east part of the scene. The dominant change pattern corresponds to built up decreased, spread across 65 distinct region(s).",
+      "vqa_answer": "Primarily in the north-east region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "17912a00",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.252
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_008\\before.png",
+      "image_after": "./cdvqa_samples\\pair_008\\after.png",
+      "query": "What changed between these two dates, and where did the change occur?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\dead0486_change_map.png",
+      "overlay_path": "test_outputs\\dead0486_overlay.png",
+      "before_after_overlay_path": "test_outputs\\dead0486_before_after_overlay.png",
+      "change_percentage": 30.98,
+      "num_change_regions": 69,
+      "dominant_quadrant": "north-east",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A substantial change (30.98% of the image area) was detected between the two dates concentrated in the north-east part of the scene. The dominant change pattern corresponds to built up decreased, spread across 69 distinct region(s).",
+      "vqa_answer": "Primarily in the north-east region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "dead0486",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.215
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_009\\before.png",
+      "image_after": "./cdvqa_samples\\pair_009\\after.png",
+      "query": "Has the built-up area increased, decreased, or remained unchanged?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\2123897b_change_map.png",
+      "overlay_path": "test_outputs\\2123897b_overlay.png",
+      "before_after_overlay_path": "test_outputs\\2123897b_before_after_overlay.png",
+      "change_percentage": 36.66,
+      "num_change_regions": 44,
+      "dominant_quadrant": "north-west",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A substantial change (36.66% of the image area) was detected between the two dates concentrated in the north-west part of the scene. The dominant change pattern corresponds to built up decreased, spread across 44 distinct region(s).",
+      "vqa_answer": "Decreased.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "2123897b",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.19
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_010\\before.png",
+      "image_after": "./cdvqa_samples\\pair_010\\after.png",
+      "query": "Is there any change between the two images?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\a23c7815_change_map.png",
+      "overlay_path": "test_outputs\\a23c7815_overlay.png",
+      "before_after_overlay_path": "test_outputs\\a23c7815_before_after_overlay.png",
+      "change_percentage": 21.28,
+      "num_change_regions": 65,
+      "dominant_quadrant": "north-east",
+      "dominant_change_category": "built_up_increased",
+      "change_description": "A substantial change (21.28% of the image area) was detected between the two dates concentrated in the north-east part of the scene. The dominant change pattern corresponds to built up increased, spread across 65 distinct region(s).",
+      "vqa_answer": "Yes.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "a23c7815",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.187
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_011\\before.png",
+      "image_after": "./cdvqa_samples\\pair_011\\after.png",
+      "query": "Where did the vegetation loss happen?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\a6b2131e_change_map.png",
+      "overlay_path": "test_outputs\\a6b2131e_overlay.png",
+      "before_after_overlay_path": "test_outputs\\a6b2131e_before_after_overlay.png",
+      "change_percentage": 24.88,
+      "num_change_regions": 62,
+      "dominant_quadrant": "south-east",
+      "dominant_change_category": "built_up_increased",
+      "change_description": "A substantial change (24.88% of the image area) was detected between the two dates concentrated in the south-east part of the scene. The dominant change pattern corresponds to built up increased, spread across 62 distinct region(s).",
+      "vqa_answer": "Primarily in the south-east region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "a6b2131e",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.213
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_012\\before.png",
+      "image_after": "./cdvqa_samples\\pair_012\\after.png",
+      "query": "What changed between these two dates, and where did the change occur?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\a38c81bd_change_map.png",
+      "overlay_path": "test_outputs\\a38c81bd_overlay.png",
+      "before_after_overlay_path": "test_outputs\\a38c81bd_before_after_overlay.png",
+      "change_percentage": 17.71,
+      "num_change_regions": 47,
+      "dominant_quadrant": "north-east",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A substantial change (17.71% of the image area) was detected between the two dates concentrated in the north-east part of the scene. The dominant change pattern corresponds to built up decreased, spread across 47 distinct region(s).",
+      "vqa_answer": "Primarily in the north-east region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "a38c81bd",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.186
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_013\\before.png",
+      "image_after": "./cdvqa_samples\\pair_013\\after.png",
+      "query": "Has the built-up area increased, decreased, or remained unchanged?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\de98c10c_change_map.png",
+      "overlay_path": "test_outputs\\de98c10c_overlay.png",
+      "before_after_overlay_path": "test_outputs\\de98c10c_before_after_overlay.png",
+      "change_percentage": 20.12,
+      "num_change_regions": 68,
+      "dominant_quadrant": "north-east",
+      "dominant_change_category": "built_up_increased",
+      "change_description": "A substantial change (20.12% of the image area) was detected between the two dates concentrated in the north-east part of the scene. The dominant change pattern corresponds to built up increased, spread across 68 distinct region(s).",
+      "vqa_answer": "Increased.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "de98c10c",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.207
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_014\\before.png",
+      "image_after": "./cdvqa_samples\\pair_014\\after.png",
+      "query": "Is there any change between the two images?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\e42b01ef_change_map.png",
+      "overlay_path": "test_outputs\\e42b01ef_overlay.png",
+      "before_after_overlay_path": "test_outputs\\e42b01ef_before_after_overlay.png",
+      "change_percentage": 8.86,
+      "num_change_regions": 40,
+      "dominant_quadrant": "south-east",
+      "dominant_change_category": "built_up_increased",
+      "change_description": "A moderate change (8.86% of the image area) was detected between the two dates concentrated in the south-east part of the scene. The dominant change pattern corresponds to built up increased, spread across 40 distinct region(s).",
+      "vqa_answer": "Yes.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "e42b01ef",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.161
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_015\\before.png",
+      "image_after": "./cdvqa_samples\\pair_015\\after.png",
+      "query": "Where did the vegetation loss happen?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\df95b495_change_map.png",
+      "overlay_path": "test_outputs\\df95b495_overlay.png",
+      "before_after_overlay_path": "test_outputs\\df95b495_before_after_overlay.png",
+      "change_percentage": 10.38,
+      "num_change_regions": 32,
+      "dominant_quadrant": "south-east",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A moderate change (10.38% of the image area) was detected between the two dates concentrated in the south-east part of the scene. The dominant change pattern corresponds to built up decreased, spread across 32 distinct region(s).",
+      "vqa_answer": "Primarily in the south-east region of the image.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "df95b495",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.155
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_016\\before.png",
+      "image_after": "./cdvqa_samples\\pair_016\\after.png",
+      "query": "What changed between these two dates, and where did the change occur?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\aadd64c2_change_map.png",
+      "overlay_path": "test_outputs\\aadd64c2_overlay.png",
+      "before_after_overlay_path": "test_outputs\\aadd64c2_before_after_overlay.png",
+      "change_percentage": 0.0,
+      "num_change_regions": 0,
+      "dominant_quadrant": "none",
+      "dominant_change_category": "no_significant_change",
+      "change_description": "No significant change was detected between the two acquisition dates.",
+      "vqa_answer": "No location of change \u2014 no significant change detected.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "aadd64c2",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.11
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_017\\before.png",
+      "image_after": "./cdvqa_samples\\pair_017\\after.png",
+      "query": "Has the built-up area increased, decreased, or remained unchanged?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\71779c6a_change_map.png",
+      "overlay_path": "test_outputs\\71779c6a_overlay.png",
+      "before_after_overlay_path": "test_outputs\\71779c6a_before_after_overlay.png",
+      "change_percentage": 0.79,
+      "num_change_regions": 6,
+      "dominant_quadrant": "north-east",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "No significant change was detected between the two acquisition dates.",
+      "vqa_answer": "Decreased.",
+      "confidence": 0.7
+    },
+    "execution_trace": {
+      "run_id": "71779c6a",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.125
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_018\\before.png",
+      "image_after": "./cdvqa_samples\\pair_018\\after.png",
+      "query": "Is there any change between the two images?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\3265e6e4_change_map.png",
+      "overlay_path": "test_outputs\\3265e6e4_overlay.png",
+      "before_after_overlay_path": "test_outputs\\3265e6e4_before_after_overlay.png",
+      "change_percentage": 30.08,
+      "num_change_regions": 38,
+      "dominant_quadrant": "south-west",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "A substantial change (30.08% of the image area) was detected between the two dates concentrated in the south-west part of the scene. The dominant change pattern corresponds to built up decreased, spread across 38 distinct region(s).",
+      "vqa_answer": "Yes.",
+      "confidence": 0.8
+    },
+    "execution_trace": {
+      "run_id": "3265e6e4",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.14
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_019\\before.png",
+      "image_after": "./cdvqa_samples\\pair_019\\after.png",
+      "query": "Where did the vegetation loss happen?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\ce8a0d94_change_map.png",
+      "overlay_path": "test_outputs\\ce8a0d94_overlay.png",
+      "before_after_overlay_path": "test_outputs\\ce8a0d94_before_after_overlay.png",
+      "change_percentage": 0.22,
+      "num_change_regions": 4,
+      "dominant_quadrant": "south-east",
+      "dominant_change_category": "built_up_decreased",
+      "change_description": "No significant change was detected between the two acquisition dates.",
+      "vqa_answer": "Primarily in the south-east region of the image.",
+      "confidence": 0.77
+    },
+    "execution_trace": {
+      "run_id": "ce8a0d94",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.126
+    }
+  },
+  {
+    "task": "change_vqa",
+    "model_tool": "M5_ChangeDetector_v1 (otsu-pixel-diff)",
+    "inputs": {
+      "image_before": "./cdvqa_samples\\pair_020\\before.png",
+      "image_after": "./cdvqa_samples\\pair_020\\after.png",
+      "query": "What changed between these two dates, and where did the change occur?"
+    },
+    "outputs": {
+      "change_map_path": "test_outputs\\2ef394e3_change_map.png",
+      "overlay_path": "test_outputs\\2ef394e3_overlay.png",
+      "before_after_overlay_path": "test_outputs\\2ef394e3_before_after_overlay.png",
+      "change_percentage": 3.32,
+      "num_change_regions": 25,
+      "dominant_quadrant": "south-east",
+      "dominant_change_category": "built_up_increased",
+      "change_description": "A minor change (3.32% of the image area) was detected between the two dates concentrated in the south-east part of the scene. The dominant change pattern corresponds to built up increased, spread across 25 distinct region(s).",
+      "vqa_answer": "Primarily in the south-east region of the image.",
+      "confidence": 0.72
+    },
+    "execution_trace": {
+      "run_id": "2ef394e3",
+      "selected_task": "change_vqa",
+      "models_used": [
+        "classical_pixel_diff+otsu"
+      ],
+      "params": {
+        "target_size": [
+          512,
+          512
+        ],
+        "use_pretrained_features": true
+      },
+      "latency_seconds": 0.142
+    }
+  }
+]

@@ -1,0 +1,19 @@
+# Core — required, this is the guaranteed-to-work baseline
+numpy
+opencv-python
+scikit-image
+scipy
+Pillow
+
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+# Optional — enables the pretrained ResNet18 feature-diff enhancement.
+# If these two lines fail to install (no internet, low disk, low time),
+# just skip them: change_detection.py auto-detects their absence and
+# falls back to classical-only mode. Nothing breaks.
+torch
+torchvision
+
+# Optional — only needed if you're loading real GeoTIFF files with rasterio
+# instead of the PNG/JPEG benchmark subsets. Skip if using CDVQA PNGs.
+rasterio
