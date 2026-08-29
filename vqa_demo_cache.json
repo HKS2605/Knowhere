@@ -1,0 +1,122 @@
+[
+  {
+    "task": "single_image_vqa",
+    "query": "Is there water in the image?",
+    "question_type": "yes_no",
+    "raw_answer": "no",
+    "refined_answer": "no",
+    "confidence": 0.8414,
+    "confidence_breakdown": {
+      "softmax_confidence": 0.7357,
+      "similarity_confidence": 1.0,
+      "weights": {
+        "softmax": 0.6,
+        "similarity": 0.4
+      }
+    },
+    "model_used": "Salesforce/blip-vqa-base",
+    "rs_backbone_used": false,
+    "image_metadata": {
+      "source_format": "PIL.Image",
+      "original_size": [
+        256,
+        256
+      ],
+      "resized": false
+    },
+    "latency_ms": 580.93,
+    "status": "success",
+    "error": null,
+    "sample_id": "s1"
+  },
+  {
+    "task": "single_image_vqa",
+    "query": "How many buildings are visible?",
+    "question_type": "count",
+    "raw_answer": "1",
+    "refined_answer": "1",
+    "confidence": 0.7428,
+    "confidence_breakdown": {
+      "softmax_confidence": 0.5714,
+      "similarity_confidence": 1.0,
+      "weights": {
+        "softmax": 0.6,
+        "similarity": 0.4
+      }
+    },
+    "model_used": "Salesforce/blip-vqa-base",
+    "rs_backbone_used": false,
+    "image_metadata": {
+      "source_format": "PIL.Image",
+      "original_size": [
+        256,
+        256
+      ],
+      "resized": false
+    },
+    "latency_ms": 127.07,
+    "status": "success",
+    "error": null,
+    "sample_id": "s2"
+  },
+  {
+    "task": "single_image_vqa",
+    "query": "What is the dominant land cover type?",
+    "question_type": "category",
+    "raw_answer": "grass",
+    "refined_answer": "grassland",
+    "confidence": 0.7635,
+    "confidence_breakdown": {
+      "softmax_confidence": 0.7058,
+      "similarity_confidence": 0.85,
+      "weights": {
+        "softmax": 0.6,
+        "similarity": 0.4
+      }
+    },
+    "model_used": "Salesforce/blip-vqa-base",
+    "rs_backbone_used": false,
+    "image_metadata": {
+      "source_format": "PIL.Image",
+      "original_size": [
+        256,
+        256
+      ],
+      "resized": false
+    },
+    "latency_ms": 112.74,
+    "status": "success",
+    "error": null,
+    "sample_id": "s3"
+  },
+  {
+    "task": "single_image_vqa",
+    "query": "Is there more vegetation than built-up area?",
+    "question_type": "compare",
+    "raw_answer": "yes",
+    "refined_answer": "forest",
+    "confidence": 0.5896,
+    "confidence_breakdown": {
+      "softmax_confidence": 0.6863,
+      "similarity_confidence": 0.4444,
+      "weights": {
+        "softmax": 0.6,
+        "similarity": 0.4
+      }
+    },
+    "model_used": "Salesforce/blip-vqa-base",
+    "rs_backbone_used": false,
+    "image_metadata": {
+      "source_format": "PIL.Image",
+      "original_size": [
+        256,
+        256
+      ],
+      "resized": false
+    },
+    "latency_ms": 118.15,
+    "status": "success",
+    "error": null,
+    "sample_id": "s4"
+  }
+]
