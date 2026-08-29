@@ -1,0 +1,25 @@
+{
+  "model": "RemoteCLIP-ViT-L-14",
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "epochs": 3,
+  "num_samples": 2000,
+  "batch_size": 16,
+  "lr": 0.0001,
+  "training": [
+    {
+      "epoch": 1,
+      "avg_loss": 2.77816
+    },
+    {
+      "epoch": 2,
+      "avg_loss": 2.77318
+    },
+    {
+      "epoch": 3,
+      "avg_loss": 2.77332
+    }
+  ],
+  "dataset": "BigEarthNet v2 (S2 optical subset)",
+  "note": "LoRA adapts Q/V attention projections of RemoteCLIP visual encoder"
+}

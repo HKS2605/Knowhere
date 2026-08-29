@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+checkpoints/*.pt
+checkpoints/remoteclip_cache/
+outputs/
+test_data/
+real_test_data/
+{backbone,fusion,outputs,checkpoints,data/
+.DS_Store
+Thumbs.db
+venv/
